@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://raftingbatu.com/sitemap.xml
+Sitemap: https://rafting.web.id/sitemap.xml
