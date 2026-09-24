@@ -1,0 +1,520 @@
+<!doctype html>
+
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Kompilasi dokumentasi keseruan petualangan rafting dan arung jeram dari berbagai klien RaftingBatu di Malang. Lihat portofolio perjalanan kami."
+      name="description"
+    />
+    <title>Galeri - RaftingBatu</title>
+    <!-- Open Graph / Social Media -->
+    <meta content="Galeri - RaftingBatu" property="og:title" />
+    <meta
+      content="Kompilasi dokumentasi keseruan petualangan rafting dan arung jeram dari berbagai klien RaftingBatu di Malang."
+      property="og:description"
+    />
+    <meta
+      content="https://raftingbatu.com/assets/images/hero-bg-galeri.webp"
+      property="og:image"
+    />
+    <meta content="https://rafting.web.id/galeri" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="id_ID" property="og:locale" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="Galeri - RaftingBatu" name="twitter:title" />
+    <meta content="#059669" name="theme-color" />
+    <link href="assets/images/favicon.webp" rel="icon" type="image/webp" />
+    <link href="assets/images/favicon.webp" rel="apple-touch-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/floating-buttons.css" rel="stylesheet" />
+    <link href="https://rafting.web.id/galeri" rel="canonical" />
+    <style>
+      /* Lightbox */
+      .lightbox-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(10, 15, 25, 0.95);
+        z-index: 9999;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        animation: lbFadeIn 0.25s ease;
+      }
+      .lightbox-overlay.active {
+        display: flex;
+      }
+      @keyframes lbFadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .lightbox-img {
+        max-width: 92vw;
+        max-height: 90vh;
+        border-radius: 16px;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+        animation: lbZoomIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        object-fit: contain;
+      }
+      @keyframes lbZoomIn {
+        from {
+          transform: scale(0.88);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .lightbox-close {
+        position: fixed;
+        top: 1.2rem;
+        right: 1.5rem;
+        width: 46px;
+        height: 46px;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1.5px solid rgba(255, 255, 255, 0.25);
+        border-radius: 50%;
+        color: white;
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        z-index: 10000;
+      }
+      .lightbox-close:hover {
+        background: rgba(255, 255, 255, 0.25);
+        transform: scale(1.1);
+      }
+      /* Gallery items clickable */
+      .gallery-item {
+        cursor: pointer;
+      }
+      .gallery-item img {
+        transition:
+          transform 0.4s ease,
+          box-shadow 0.4s ease;
+      }
+      .gallery-item:hover img {
+        transform: scale(1.03);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <img
+            alt="Logo RaftingBatu Malang"
+            class="me-2"
+            src="assets/images/logo.webp"
+            style="height: 45px; width: auto"
+          />
+          RaftingBatu
+        </a>
+        <button aria-label="Toggle navigation"
+          class="navbar-toggler border-0 shadow-none"
+          data-bs-target="#navbarNav"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <i
+            class="bi bi-list nav-toggle-icon"
+            style="font-size: 1.7rem; color: white"
+          ></i
+          ><i
+            class="bi bi-x nav-close-icon"
+            style="font-size: 1.9rem; color: white; display: none"
+          ></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item"><a class="nav-link" href="/">Beranda</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/layanan">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/paket">Paket</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/galeri">Galeri</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="hero-section hero-inner mt-5"
+      style="
+        background-image: url(&quot;assets/images/hero-bg-galeri.webp&quot;);
+      "
+    >
+      <div class="container hero-content text-center" data-aos="fade-in">
+        <h1 class="display-4 fw-bold">Galeri Kami</h1>
+        <p class="lead">Momen Keseruan Bersama Klien RaftingBatu.</p>
+      </div>
+    </header>
+    <!-- Breadcrumb -->
+    <section class="py-2" style="background: rgba(0,0,0,0.02); border-bottom: 1px solid rgba(0,0,0,0.06);">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0 py-1" style="font-size: 0.88rem;">
+        <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Galeri</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <section class="py-5 bg-light">
+      <div class="container py-4">
+        <div class="row g-3 g-md-4">
+          <!-- Baris 1: 3 Foto -->
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="gallery-item rounded-4 overflow-hidden shadow-sm">
+              <img
+                alt="Galeri Rafting 1"
+                class="w-100"
+                src="assets/images/galeri/galeri1.webp"
+                style="object-fit: cover; height: 260px; display: block"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="gallery-item rounded-4 overflow-hidden shadow-sm">
+              <img
+                alt="Galeri Rafting 2"
+                class="w-100"
+                src="assets/images/galeri/galeri2.webp"
+                style="object-fit: cover; height: 260px; display: block"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="gallery-item rounded-4 overflow-hidden shadow-sm">
+              <img
+                alt="Galeri Rafting 4"
+                class="w-100"
+                src="assets/images/galeri/galeri4.webp"
+                style="object-fit: cover; height: 260px; display: block"
+              />
+            </div>
+          </div>
+          <!-- Baris 2: 2 Foto -->
+          <div class="col-12 col-md-5" data-aos="fade-up" data-aos-delay="250">
+            <div class="gallery-item rounded-4 overflow-hidden shadow-sm">
+              <img
+                alt="Galeri Rafting 5"
+                class="w-100"
+                src="assets/images/galeri/galeri5.webp"
+                style="object-fit: cover; height: 300px; display: block"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-7" data-aos="fade-up" data-aos-delay="300">
+            <div class="gallery-item rounded-4 overflow-hidden shadow-sm">
+              <img
+                alt="Galeri Rafting 6"
+                class="w-100"
+                src="assets/images/galeri/galeri6.webp"
+                style="object-fit: cover; height: 300px; display: block"
+              />
+            </div>
+          </div>
+          <!-- Baris 3: 3 Foto -->
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="gallery-item rounded-4 overflow-hidden shadow-sm">
+              <img
+                alt="Galeri Rafting 7"
+                class="w-100"
+                src="assets/images/galeri/galeri7.webp"
+                style="object-fit: cover; height: 260px; display: block"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="gallery-item rounded-4 overflow-hidden shadow-sm">
+              <img
+                alt="Galeri Rafting 8"
+                class="w-100"
+                src="assets/images/galeri/galeri8.webp"
+                style="object-fit: cover; height: 260px; display: block"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="gallery-item rounded-4 overflow-hidden shadow-sm">
+              <img
+                alt="Galeri Rafting 9"
+                class="w-100"
+                src="assets/images/galeri/galeri9.webp"
+                style="object-fit: cover; height: 260px; display: block"
+              />
+            </div>
+          </div>
+          <!-- Baris 4: 2 Foto -->
+          <div class="col-12 col-md-7" data-aos="fade-up" data-aos-delay="250">
+            <div class="gallery-item rounded-4 overflow-hidden shadow-sm">
+              <img
+                alt="Galeri Rafting 10"
+                class="w-100"
+                src="assets/images/galeri/galeri10.webp"
+                style="object-fit: cover; height: 300px; display: block"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-5" data-aos="fade-up" data-aos-delay="300">
+            <div class="gallery-item rounded-4 overflow-hidden shadow-sm">
+              <img
+                alt="Galeri Rafting 11"
+                class="w-100"
+                src="assets/images/galeri/galeri11.webp"
+                style="object-fit: cover; height: 300px; display: block"
+              />
+            </div>
+          </div>
+          <!-- Baris 5: 2 Foto -->
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="gallery-item rounded-4 overflow-hidden shadow-sm">
+              <img
+                alt="Galeri Rafting 12"
+                class="w-100"
+                src="assets/images/galeri/galeri12.webp"
+                style="object-fit: cover; height: 280px; display: block"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="gallery-item rounded-4 overflow-hidden shadow-sm">
+              <img
+                alt="Galeri Rafting 13"
+                class="w-100"
+                src="assets/images/galeri/galeri13.webp"
+                style="object-fit: cover; height: 280px; display: block"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Lightbox -->
+        <div class="lightbox-overlay" id="lightboxOverlay">
+          <button aria-label="Tutup" class="lightbox-close" id="lightboxClose">
+            <i class="bi bi-x"></i>
+          </button>
+          <img alt="" class="lightbox-img" id="lightboxImg" src="" />
+        </div>
+      </div>
+    </section>
+            <footer class="pt-5 pb-3">
+    <div class="container pt-4">
+      <div class="row mb-4">
+        <div class="col-lg-4 mb-4 text-lg-start">
+          <h4 class="fw-bold mb-3 d-flex align-items-center justify-content-lg-start">
+            <img alt="Logo RaftingBatu Malang" class="me-2" src="assets/images/logo.webp"
+              style="height: 55px; width: auto" />
+            <span style="
+                  font-size: 1.15em;
+                  color: white !important;
+                  font-weight: 700;
+                ">RaftingBatu</span>
+          </h4>
+          <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.8">
+            Operator rafting profesional di Batu, Malang. Menghadirkan
+            pengalaman arung jeram yang aman dan berkesan.
+          </p>
+        </div>
+        <div class="col-lg-4 mb-4 d-flex flex-column align-items-lg-center text-start">
+          <div>
+            <h5 class="fw-bold mb-4">Menu Cepat</h5>
+            <ul class="list-unstyled d-flex flex-column gap-2" style="color: rgba(255, 255, 255, 0.7)">
+              <li><a href="/">Beranda</a></li>
+              <li><a href="/about">Tentang Kami</a></li>
+              <li><a href="/layanan">Layanan</a></li>
+              <li><a href="/paket">Paket</a></li>
+              <li><a href="/galeri">Galeri</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 text-start text-lg-start">
+          <h5 class="fw-bold mb-4">Kontak Kami</h5>
+          <ul class="list-unstyled d-flex flex-column gap-3 mb-4" style="color: rgba(255, 255, 255, 0.7)">
+            <li class="d-flex align-items-center justify-content-start justify-content-lg-start">
+              <i class="bi bi-telephone text-success me-3 fs-5"></i>
+              <span>0822-1122-1909</span>
+            </li>
+            <li class="d-flex align-items-center justify-content-start justify-content-lg-start">
+              <i class="bi bi-clock text-success me-3 fs-5"></i>
+              <span>Buka Setiap Hari: 07.00 - 17.00 WIB</span>
+            </li>
+          </ul>
+          <div class="d-flex gap-3 justify-content-start justify-content-lg-start">
+            <a class="fs-4 hover-lift" href="https://www.instagram.com/baturafting_id" rel="noopener noreferrer"
+              target="_blank"><i class="bi bi-instagram"></i></a>
+            <a class="fs-4 hover-lift" href="https://www.facebook.com/share/1KJWWZq6Ln/" rel="noopener noreferrer"
+              target="_blank"><i class="bi bi-facebook"></i></a>
+            <a class="fs-4 hover-lift" href="https://www.tiktok.com/@baturafting.id" rel="noopener noreferrer"
+              target="_blank"><i class="bi bi-tiktok"></i></a>
+            <a class="fs-4 hover-lift" href="https://www.threads.com/@baturafting_id" rel="noopener noreferrer"
+              target="_blank"><i class="bi bi-threads"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="mb-4" style="border-color: rgba(255, 255, 255, 0.1)" />
+      
+      <div class="network-section mb-4 text-center text-lg-start">
+        <h6 class="fw-bold mb-4 text-uppercase" style="color: #20ba5a; letter-spacing: 1px; font-size: 0.85rem;">Network</h6>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3" style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.7);">
+          <div class="col">
+            <a href="https://provideroutbound.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='inherit'">
+              <span style="color: #20ba5a; margin-right: 5px; font-weight: bold;">&gt;</span>provideroutbound.web.id
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://outboundbatumalang.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='inherit'">
+              <span style="color: #20ba5a; margin-right: 5px; font-weight: bold;">&gt;</span>outboundbatumalang.web.id
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://provideroutboundmalang.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='inherit'">
+              <span style="color: #20ba5a; margin-right: 5px; font-weight: bold;">&gt;</span>provideroutboundmalang.web.id
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://outboundmalang.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='inherit'">
+              <span style="color: #20ba5a; margin-right: 5px; font-weight: bold;">&gt;</span>outboundmalang.web.id
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://paketoutboundmalang.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='inherit'">
+              <span style="color: #20ba5a; margin-right: 5px; font-weight: bold;">&gt;</span>paketoutboundmalang.web.id
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://vendoroutboundmalang.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='inherit'">
+              <span style="color: #20ba5a; margin-right: 5px; font-weight: bold;">&gt;</span>vendoroutboundmalang.web.id
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://offroad.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='inherit'">
+              <span style="color: #20ba5a; margin-right: 5px; font-weight: bold;">&gt;</span>offroad.web.id
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://paintball.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='inherit'">
+              <span style="color: #20ba5a; margin-right: 5px; font-weight: bold;">&gt;</span>paintball.web.id
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://cobantalun.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='inherit'">
+              <span style="color: #20ba5a; margin-right: 5px; font-weight: bold;">&gt;</span>cobantalun.web.id
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://rafting.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='inherit'">
+              <span style="color: #20ba5a; margin-right: 5px; font-weight: bold;">&gt;</span>rafting.web.id
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://familygathering.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='inherit'">
+              <span style="color: #20ba5a; margin-right: 5px; font-weight: bold;">&gt;</span>familygathering.web.id
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://outboundpantai.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='inherit'">
+              <span style="color: #20ba5a; margin-right: 5px; font-weight: bold;">&gt;</span>outboundpantai.web.id
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://paintballbatumalang.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='inherit'">
+              <span style="color: #20ba5a; margin-right: 5px; font-weight: bold;">&gt;</span>paintballbatumalang.web.id
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://vendorhampers.web.id" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='inherit'">
+              <span style="color: #20ba5a; margin-right: 5px; font-weight: bold;">&gt;</span>vendorhampers.web.id
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="mb-4" style="border-color: rgba(255, 255, 255, 0.1)" />
+      <div class="text-center" style="color: rgba(255, 255, 255, 0.5)">
+        <small>© 2026 RaftingBatu. Designed Professionally for B2B Standards.</small>
+      </div>
+    </div>
+  </footer>
+    <a
+      aria-label="Chat WhatsApp"
+      class="floating-wa"
+      href="https://wa.me/6282211221909?text=Halo%20saya%20tertarik%20dengan%20paket%20tour%20Anda"
+      rel="noopener noreferrer"
+      target="_blank"
+      ><i class="bi bi-whatsapp"></i
+    ></a>
+    <a aria-label="Scroll to top" class="back-to-top" href="#"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+    <script>
+      // Lightbox
+      const overlay = document.getElementById("lightboxOverlay");
+      const lbImg = document.getElementById("lightboxImg");
+      const lbClose = document.getElementById("lightboxClose");
+
+      document.querySelectorAll(".gallery-item").forEach(function (item) {
+        item.addEventListener("click", function () {
+          const img = item.querySelector("img");
+          lbImg.src = img.src;
+          lbImg.alt = img.alt;
+          overlay.classList.add("active");
+          document.body.style.overflow = "hidden";
+        });
+      });
+
+      function closeLightbox() {
+        overlay.classList.remove("active");
+        document.body.style.overflow = "";
+        lbImg.src = "";
+      }
+
+      lbClose.addEventListener("click", closeLightbox);
+      overlay.addEventListener("click", function (e) {
+        if (e.target === overlay) closeLightbox();
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeLightbox();
+      });
+    </script>
+  </body>
+</html>
