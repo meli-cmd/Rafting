@@ -97,10 +97,23 @@ img {
 .hero-section {
     min-height: 100vh; min-height: 100svh; background-size: cover; background-position: center; background-attachment: fixed; position: relative; display: flex; align-items: center; padding-top: 80px; padding-bottom: 80px; overflow: hidden;
 }
+.hero-bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; pointer-events: none; }
 .hero-section::before {
-    content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(15, 23, 42, 0.65) 0%, rgba(5, 150, 105, 0.15) 100%);
+    content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(15, 23, 42, 0.65) 0%, rgba(5, 150, 105, 0.15) 100%); z-index: 1;
 }
-.hero-content { position: relative; z-index: 1; color: white; width: 100%; text-align: left; }
+.hero-content .btn-outline-light {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-color: rgba(255, 255, 255, 0.8);
+    color: #ffffff;
+}
+.hero-content .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: #ffffff;
+    color: #ffffff;
+}
+.hero-content { position: relative; z-index: 2; color: white; width: 100%; text-align: left; }
 .hero-section:not(.hero-inner) .hero-content h1 { font-size: clamp(2.5rem, 6vw, 3.75rem) !important; }
 .hero-content h1 { color: white !important; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); }
 .hero-content .lead { margin-left: 0 !important; }
@@ -766,3 +779,9 @@ details.table-of-contents[open] summary .toc-chevron { transform: rotate(180deg)
     50% { transform: translateY(-15px); }
     100% { transform: translateY(0px); }
 }
+
+/* Aksesibilitas: Tingkatkan kontras text-muted */
+.text-muted {
+    color: #475569 !important;
+}
+
